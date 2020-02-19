@@ -10,5 +10,6 @@ public class FibTest {
   @Test
   public void fixNumbers() throws Throwable {
     assertThat(fib(1), equalTo(1));
+    assertThat(fib(2), equalTo(1));
   }
 }
