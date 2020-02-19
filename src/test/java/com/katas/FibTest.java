@@ -17,6 +17,6 @@ public class FibTest {
   public void sumOfPreviousNumber2() throws Throwable {
     assertThat(fib(3), equalTo(2));
     assertThat(fib(4), equalTo(3));
-    //assertThat(fib(5), equalTo(5));
+    assertThat(fib(5), equalTo(5));
   }
 }
