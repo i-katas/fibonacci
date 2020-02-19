@@ -12,4 +12,9 @@ public class FibTest {
     assertThat(fib(1), equalTo(1));
     assertThat(fib(2), equalTo(1));
   }
+
+  @Test
+  public void sumOfPreviousNumber2() throws Throwable {
+    //assertThat(fib(3), equalTo(2));
+  }
 }
