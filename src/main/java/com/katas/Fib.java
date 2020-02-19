@@ -2,6 +2,7 @@ package com.katas;
 
 public class Fib {
   public static int fib(int n) {
-    return 1;
+    int sum = 1;
+    return sum;
   }
 }
