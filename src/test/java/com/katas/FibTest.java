@@ -19,4 +19,9 @@ public class FibTest {
     assertThat(fib(4), equalTo(3));
     assertThat(fib(5), equalTo(5));
   }
+
+  @Test
+  public void zero() throws Throwable {
+    assertThat(fib(0), equalTo(0));
+  }
 }
