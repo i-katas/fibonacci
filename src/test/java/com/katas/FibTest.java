@@ -8,20 +8,21 @@ import static com.katas.Fib.fib;
 
 public class FibTest {
   @Test
-  public void fixedNumbers() throws Throwable {
+  public void return1ForTheFirstTwoIndecies() throws Throwable {
     assertThat(fib(1), equalTo(1));
     assertThat(fib(2), equalTo(1));
   }
 
   @Test
-  public void sumOfPreviousNumber2() throws Throwable {
+  public void sumOfPrevious2IndicesResultIfIndexLargeThan2() throws Throwable {
     assertThat(fib(3), equalTo(2));
     assertThat(fib(4), equalTo(3));
     assertThat(fib(5), equalTo(5));
   }
 
   @Test
-  public void zero() throws Throwable {
+  public void returnZeroIfIndexLessThan1() throws Throwable {
     assertThat(fib(0), equalTo(0));
+    assertThat(fib(-1), equalTo(0));
   }
 }
