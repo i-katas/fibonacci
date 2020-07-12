@@ -1,6 +1,7 @@
 package com.katas;
 
 import org.junit.Test;
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertThat;
 import static org.hamcrest.Matchers.equalTo;
 
@@ -21,8 +22,7 @@ public class FibTest {
   }
 
   @Test
-  public void returnZeroIfIndexLessThan1() throws Throwable {
-    assertThat(fib(0), equalTo(0));
-    assertThat(fib(-1), equalTo(0));
+  public void throwsExceptionIfIndexLessThan1() throws Throwable {
+    assertThrows(IllegalArgumentException.class, () -> fib(0));
   }
 }
