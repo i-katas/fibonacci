@@ -5,13 +5,13 @@ public class Fib {
         if (i < 1) {
             throw new IllegalArgumentException();
         }
-        int sum = 0;
+        int result = 0;
         for(int prev = 1, n = i; n > 0; n--) {
-            sum = prev + (prev = sum);
-            if(prev > sum) {
+            result = prev + (prev = result);
+            if(prev > result) {
                 throw new IllegalArgumentException("fib(" + i + ") is overflowed");
             }
         }
-        return sum;
+        return result;
     }
 }
