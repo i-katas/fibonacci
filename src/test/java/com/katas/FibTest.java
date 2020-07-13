@@ -18,9 +18,9 @@ public class FibTest {
 
     @Test
     public void sumOfPrevious2IndicesResultIfIndexLargeThan2() throws Throwable {
-        assertThat(fib(3), equalTo(2));
-        assertThat(fib(4), equalTo(3));
-        assertThat(fib(5), equalTo(5));
+        assertThat(fib(3), equalTo(fib(1) + fib(2)));
+        assertThat(fib(4), equalTo(fib(2) + fib(3)));
+        assertThat(fib(5), equalTo(fib(3) + fib(4)));
     }
 
     @Test
